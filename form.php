@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Form Pendaftaran Anggota</title>
+<title>Form Pendaftaran</title>
 </head>
 <body>
 
-<h2>Form Pendaftaran Anggota</h2>
-    <form action="simpan-pendaftaran.php" method="post">
+<h2>Form Pendaftaran mahasiswa baru</h2>
+<h2>by admin universitas</h2>
+    <form method="post">
 	<table>
           <tr>
-              <td><label>Username:</label></td><td><input type="text" name="username" placeholder="Masukan Username" /></td>
+              <td><label>NIM</label></td><td><input type="text" name="nim" placeholder="Masukan nim" /></td>
 	  </tr>
 	  <tr>
 	      <td><label>Nama:</label></td><td><input type="text" name="nama" placeholder="Masukan Nama" /></td>
@@ -18,16 +19,10 @@
 	      <td><label>Alamat:</label></td><td><textarea name="alamat" rows="5" placeholder="Masukan Alamat" ></textarea></td>
 	  </tr>
 	  <tr>
-              <td><label>Email:</label></td><td><input type="email" name="email" placeholder="Masukan Email" /></td>
+              <td><label>Program Studi:</label></td><td><input placeholder="pilih prodi" /></td>
 	  </tr>
-	  <tr>
-	      <td><label>No HP:</label></td><td><input type="text" name="no_hp" placeholder="Masukan No HP" /></td>
-	  </tr>
-	  <tr>
-	      <td><label>Password:</label></td><td><input type="password" name="password" placeholder="Masukan Password" /></td>
-	   </tr>
 	</table>
-      <button type="submit" name="submit">Submit</button>
+      <button type="simpan" name="simpan">Simpan</button>
     </form>
 </body>
 </html>
